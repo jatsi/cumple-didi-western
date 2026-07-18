@@ -1,6 +1,5 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import "./index.css";
 
 const wishes = [
   "Que este nuevo año te traiga aventuras inolvidables.",
@@ -50,7 +49,7 @@ export default function Home() {
 
   return (
     <main>
-      <audio ref={audioRef} src="/music.mp3" loop preload="metadata" onEnded={() => setMusicOn(false)} onError={() => { setMusicOn(false); setMusicError(true); }} />
+      <audio ref={audioRef} src="./music.mp3" loop preload="metadata" onEnded={() => setMusicOn(false)} onError={() => { setMusicOn(false); setMusicError(true); }} />
       <div className="grain" aria-hidden="true" />
       <nav className="nav" aria-label="Navegación principal">
         <a className="brand" href="#inicio"><span>★</span> DIDI&apos;S SALOON <span>★</span></a>
@@ -69,7 +68,7 @@ export default function Home() {
         <div className="mountains front" aria-hidden="true" />
         <div className="cactus cactusOne" aria-hidden="true"><i /><b /></div>
         <div className="cactus cactusTwo" aria-hidden="true"><i /><b /></div>
-        <img className="chibi heroChibi" src="/chibi-vaquera.png" alt="Jatsi en versión chibi vestida de vaquera saludando a DIDI" />
+        <img className="chibi heroChibi" src="./chibi-vaquera.png" alt="Jatsi en versión chibi vestida de vaquera saludando a DIDI" />
         <div className="heroContent">
           <p className="eyebrow">SE BUSCA PARA CELEBRAR</p>
           <div className="poster">
@@ -87,7 +86,7 @@ export default function Home() {
 
       <section className="messageSection" id="mensaje">
         <div className="rope" aria-hidden="true" />
-        <img className="chibi cakeChibi" src="/chibi-pastel.png" alt="Jatsi chibi con ropa western sosteniendo un pastel para DIDI" />
+        <img className="chibi cakeChibi" src="./chibi-pastel.png" alt="Jatsi chibi con ropa western sosteniendo un pastel para DIDI" />
         <article className="letter">
           <span className="stamp">D</span>
           <p className="kicker">UN MENSAJE DESDE EL CORAZÓN</p>
@@ -96,7 +95,7 @@ export default function Home() {
           <p>Gracias por haber llegado a mi vida y convertirte en alguien tan importante para mí. Tu compañía, tu cariño y todo el apoyo que me brindas significan muchísimo.</p>
           <p>También quiero agradecerte de corazón por ser uno de los principales donadores de mis lives. Cada regalo y cada momento en el que estás presente me ayudan a seguir adelante, pero lo que más valoro es saber que puedo contar contigo.</p>
           <p>Sigue siendo ese hombre increíble que ilumina cada lugar al que llega. Que nunca te falten buenos amigos, grandes caminos por recorrer y razones para brindar.</p>
-          <div className="signature">Con todo mi cariño y gratitud <span>♥</span><small>— 🦋 𝓙𝓪𝓽𝓼𝓲 💜 </small></div>
+          <div className="signature">Con todo mi cariño y gratitud <span>♥</span><small>— Jatsi</small></div>
         </article>
       </section>
 
@@ -114,7 +113,7 @@ export default function Home() {
 
       {celebrating && (
         <div className="celebration" role="status" aria-live="polite">
-          {Array.from({ length: 36 }).map((_, i) => <i key={i} style={{ "--i": i } as React.CSSProperties}>{i % 3 === 0 ? "★" : i % 3 === 1 ? "✦" : "♥"}</i>)}
+          {Array.from({ length: 36 }).map((_, i) => <i key={i} style={{ "--i": i } as CSSProperties}>{i % 3 === 0 ? "★" : i % 3 === 1 ? "✦" : "♥"}</i>)}
           <div className="toast"><span>YEEHAW!</span><b>¡Que cumplas muchos más, DIDI!</b></div>
         </div>
       )}
