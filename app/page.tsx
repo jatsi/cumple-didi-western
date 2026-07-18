@@ -96,7 +96,7 @@ export default function Home() {
           <p>Gracias por haber llegado a mi vida y convertirte en alguien tan importante para mí. Tu compañía, tu cariño y todo el apoyo que me brindas significan muchísimo.</p>
           <p>También quiero agradecerte de corazón por ser uno de los principales donadores de mis lives. Cada regalo y cada momento en el que estás presente me ayudan a seguir adelante, pero lo que más valoro es saber que puedo contar contigo.</p>
           <p>Sigue siendo ese hombre increíble que ilumina cada lugar al que llega. Que nunca te falten buenos amigos, grandes caminos por recorrer y razones para brindar.</p>
-          <div className="signature">Con todo mi cariño y gratitud <span>♥</span><small>— Jatsi</small></div>
+          <div className="signature">Con todo mi cariño y gratitud <span>♥</span><small>— 🦋 𝓙𝓪𝓽𝓼𝓲 💜 </small></div>
         </article>
       </section>
 
